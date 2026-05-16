@@ -1067,7 +1067,7 @@ async function proceedToPayment() {
   proceedBtn.disabled = true;
   proceedBtn.textContent = 'Processing...';
 
-  const reference = 'MKOPO_' + Date.now();
+  const reference = 'Account_' + Date.now();
 
   // DEMO MODE: If config not loaded, simulate the flow
   if (!MEGAPAY_API_KEY || MEGAPAY_API_KEY === 'YOUR_MEGAPAY_API_KEY') {
